@@ -59,6 +59,7 @@ const Home: BlitzPage = () => {
         </div>
         <p>
           <strong>Congrats!</strong> Your app is ready, including user sign-up and log-in.
+          <h2>Master branch</h2>
         </p>
         <div className="buttons" style={{ marginTop: "1rem", marginBottom: "1rem" }}>
           <Suspense fallback="Loading...">
