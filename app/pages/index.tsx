@@ -7,7 +7,6 @@ import logo from "public/logo.png"
 import NavBar from "app/core/components/NavBar"
 import SampleTable from "app/core/components/SampleTable"
 import Modal from "app/core/components/Modal"
-import LoginForm from "app/core/components/LoginForm"
 
 /*
  * This file is just for a pleasant getting started page for your new app.
