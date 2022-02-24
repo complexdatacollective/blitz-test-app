@@ -27,6 +27,7 @@ export function Form<S extends z.ZodType<any, any>>({
   schema,
   initialValues,
   onSubmit,
+  className,
   ...props
 }: FormProps<S>) {
   const ctx = useForm<z.infer<S>>({
@@ -52,7 +53,7 @@ export function Form<S extends z.ZodType<any, any>>({
             }
           }
         })}
-        className="form"
+        className={className}
         {...props}
       >
         {/* Form fields supplied as children are rendered here */}
@@ -63,18 +64,6 @@ export function Form<S extends z.ZodType<any, any>>({
             {formError}
           </div>
         )}
-
-        {submitText && (
-          <button type="submit" disabled={ctx.formState.isSubmitting}>
-            {submitText}
-          </button>
-        )}
-
-        <style global jsx>{`
-          .form > * + * {
-            margin-top: 1rem;
-          }
-        `}</style>
       </form>
     </FormProvider>
   )

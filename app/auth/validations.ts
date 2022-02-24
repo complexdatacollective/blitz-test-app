@@ -7,7 +7,7 @@ export const email = z
 
 export const password = z
   .string()
-  .min(10)
+  .min(3, { message: "Password must be at least 3 characters" })
   .max(100)
   .transform((str) => str.trim())
 
