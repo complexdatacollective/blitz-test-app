@@ -27,7 +27,9 @@
                 "value": "dbConnectionString"
               }
             },
-            "SESSION_SECRET_KEY": { "fromParameterStore": "SESSION_SECRET_KEY" }
+            "SESSION_SECRET_KEY": {
+              "fromParameterStore": "fc.blitz-test-app.env.production.cg1d1mp8.SESSION_SECRET_KEY"
+            }
           }
         },
         {
