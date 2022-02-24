@@ -14,7 +14,7 @@
           "type": "fargate",
           "cpu": 0.25,
           "memory": 0.5,
-          "domain": "www.example.com",
+          "domain": "studio.networkcanvas.com",
           "minInstances": 1,
           "maxInstances": 1,
           "buildCommand": "blitz prisma generate && blitz build && blitz prisma migrate deploy",
@@ -27,7 +27,7 @@
                 "value": "dbConnectionString"
               }
             },
-            "SESSION_SECRET_KEY": "SESSION_SECRET_KEY"
+            "SESSION_SECRET_KEY": { "fromParameterStore": "SESSION_SECRET_KEY" }
           }
         },
         {
