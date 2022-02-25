@@ -4,7 +4,7 @@ import { Dialog, Transition } from "@headlessui/react"
 import { FaExclamation } from "react-icons/fa"
 
 const Modal = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   const cancelButtonRef = useRef(null)
 
